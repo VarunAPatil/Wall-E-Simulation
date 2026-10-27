@@ -1,0 +1,10 @@
+vendor/
+toolchain/
+results/**/raw/
+__pycache__/
+*.pyc
+.venv-docs/
+.nvimlog
+OPENEMS_SESSION_CONTEXT.md
+blog.md
+docs/Equivalent_Circuit_EC_FDTD_Method_for_Dispersive_M.pdf

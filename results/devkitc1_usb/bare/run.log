@@ -1,0 +1,50 @@
+Saved models/devkitc1_usb.xml
+Saved results/devkitc1_usb_geometry.png
+Running devkitc1_usb: 10 mm differential pair; max 100000 steps
+ ---------------------------------------------------------------------- 
+ | openEMS 64bit -- version v0.37.0-19-gc3a956b
+ | (C) 2010-2026 Thorsten Liebig <thorsten.liebig@gmx.de>  GPL license
+ ---------------------------------------------------------------------- 
+	Used external libraries:
+		CSXCAD -- Version: v0.7.0-1-gf90b407
+		hdf5   -- Version: 1.10.7
+		          compiled against: HDF5 library version: 1.10.7
+		tinyxml -- compiled against: 2.6.2
+		fparser
+		boost  -- compiled against: 1_74
+		vtk -- Version: 9.1.0
+		       compiled against: 9.1.0
+
+Create FDTD operator (compressed SSE + multi-threading)
+FDTD simulation size: 151x101x31 --> 472781 FDTD cells 
+FDTD timestep is: 9.94496e-14 s; Nyquist rate: 1675 timesteps @3.0016e+09 Hz
+openEMS::SetupFDTD: Warning, the timestep seems to be very small --> long simulation. Check your mesh!?
+Excitation signal length is: 19205 timesteps (1.90993e-09s)
+Max. number of timesteps: 100000 ( --> 5.20698 * Excitation signal length)
+Create FDTD engine (compressed SSE + multi-threading)
+Running FDTD engine... this may take a while... grab a cup of coffee?!?
+[@        4s] Timestep:          836 || Speed:   94.5 MC/s (5.002e-03 s/TS) || Energy: ~0.00e+00 (- 0.00dB)
+[@        9s] Timestep:         2508 || Speed:  151.6 MC/s (3.118e-03 s/TS) || Energy: ~2.12e-21 (- 0.00dB)
+[@       13s] Timestep:         4180 || Speed:  185.6 MC/s (2.548e-03 s/TS) || Energy: ~3.07e-18 (- 0.00dB)
+[@       18s] Timestep:         6270 || Speed:  205.1 MC/s (2.305e-03 s/TS) || Energy: ~8.59e-18 (- 0.00dB)
+[@       23s] Timestep:         8360 || Speed:  201.9 MC/s (2.342e-03 s/TS) || Energy: ~1.69e-15 (- 0.00dB)
+Multithreaded Engine: Best performance found using 4 threads.
+[@       28s] Timestep:        10450 || Speed:  205.2 MC/s (2.304e-03 s/TS) || Energy: ~1.23e-14 (- 0.00dB)
+[@       33s] Timestep:        12540 || Speed:  202.9 MC/s (2.330e-03 s/TS) || Energy: ~6.09e-16 (-13.04dB)
+[@       37s] Timestep:        14630 || Speed:  200.9 MC/s (2.353e-03 s/TS) || Energy: ~1.47e-15 (- 9.23dB)
+[@       42s] Timestep:        16302 || Speed:  193.1 MC/s (2.448e-03 s/TS) || Energy: ~1.59e-16 (-18.88dB)
+[@       46s] Timestep:        17974 || Speed:  196.3 MC/s (2.409e-03 s/TS) || Energy: ~8.39e-17 (-21.65dB)
+[@       50s] Timestep:        20064 || Speed:  204.5 MC/s (2.311e-03 s/TS) || Energy: ~2.33e-17 (-27.21dB)
+[@       55s] Timestep:        22154 || Speed:  207.0 MC/s (2.284e-03 s/TS) || Energy: ~2.61e-18 (-36.72dB)
+[@     1m00s] Timestep:        24244 || Speed:  199.7 MC/s (2.368e-03 s/TS) || Energy: ~8.43e-19 (-41.63dB)
+[@     1m05s] Timestep:        26334 || Speed:  199.9 MC/s (2.365e-03 s/TS) || Energy: ~3.14e-19 (-45.92dB)
+[@     1m10s] Timestep:        28424 || Speed:  205.1 MC/s (2.305e-03 s/TS) || Energy: ~1.80e-19 (-48.34dB)
+[@     1m14s] Timestep:        30096 || Speed:  192.7 MC/s (2.454e-03 s/TS) || Energy: ~1.28e-19 (-49.82dB)
+[@     1m19s] Timestep:        32186 || Speed:  204.0 MC/s (2.317e-03 s/TS) || Energy: ~8.25e-20 (-51.73dB)
+RunFDTD: end-criteria of -50.00dB reached after 32186 timesteps (-51.73dB)
+Time for 32186 iterations with 472781.00 cells : 79.35 sec
+Speed: 191.76 MCells/s 
+Saved results/devkitc1_usb_sparams.csv
+Saved results/devkitc1_usb_sparams.png
+
+Simulation exit code: 0
